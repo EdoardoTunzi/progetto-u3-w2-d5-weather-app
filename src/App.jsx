@@ -11,7 +11,7 @@ function App() {
       <MyHeader />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/details/:city" element={<Details />} />
+        <Route path="/details/:lat/:lon" element={<Details />} />
       </Routes>
     </BrowserRouter>
   );
