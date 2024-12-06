@@ -36,6 +36,7 @@ const Details = () => {
   useEffect(() => {
     fetchFromParams();
     handleFetch5days();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lat, lon]);
 
   return (

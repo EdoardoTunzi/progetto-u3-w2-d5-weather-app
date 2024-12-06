@@ -38,7 +38,7 @@ const HomePage = () => {
       <p>Insert a city name below to see the forecast</p>
       <Row className="justify-content-center mt-4">
         <Col xs={12} sm={8} md={6}>
-          <Form onSubmit={handleSearch}>
+          <Form onSubmit={(e) => handleSearch(e)}>
             <Form.Group controlId="cityInput">
               <Form.Control type="text" placeholder="Insert city name and search" value={city} onChange={(e) => setCity(e.target.value)} />
             </Form.Group>
